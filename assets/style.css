@@ -277,9 +277,7 @@ h5 {
 .sobre-texto,
 .slogan {
     width: 460px;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+
 
 
 
@@ -360,20 +358,10 @@ h5 {
     transition: all .45s ease;
     width: 220px;
     height: 120px;
-
     align-items: center;
     text-align: center;
     justify-content: center;
     gap: 10px;
-
-    /* efeito de vidro */
-    /* background: rgba(255, 230, 5, 0.05);
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893); */
-
     background: var(--main-color-gradient);
 }
 
@@ -381,38 +369,27 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     transition: all .45s ease;
-    /* padding: 19px; */
     width: 220px;
-    height: 350px;
-    transform: translateY(-30px);
-    /* efeito de vidro */
-    /* background: rgba(255, 205, 5, 0.59);
-    border-radius: 8px;
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893);    */
+    height: 230px;
+    /* transform: translateY(-30px); */
 
-    align-items: center;
+    align-items: start;
     text-align: center;
     justify-content: center;
     gap: 10px;
-
     background: var(--main-color-gradient);
 }
 
 .box-sobre:hover .items-desc {
     /* padding: 14px; */
     opacity: 1;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
     transition: opacity 1.5s ease;
-    /* Adiciona uma transição suave */
+    height: 200px;
+    /* transform: translateY(-20px); */
 }
 
 .box-sobre:hover .items-titulo {
-    font-size: 20px;
+    font-size: 15px;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -421,7 +398,8 @@ h5 {
 }
 
 .items-titulo {
-    font-size: 20px;
+    font-size: 15px;
+    width: 125px;
     transition: opacity 0.3s ease;
     text-align: left;
 }
@@ -435,31 +413,16 @@ h5 {
 .items-desc {
     /* Defina a opacidade inicial como 0 para tornar o texto invisível */
     opacity: 0;
-    text-align: justify;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
+    text-align: left;
     color: #fff;
-    /* Define a cor do texto */
-    padding: 10px;
-    /* Ajuste o espaçamento conforme desejado */
-    box-sizing: border-box;
-    /* Garante que o padding não afete o tamanho total do elemento */
-
-    padding: 15px;
-
+    font-size: 12px;
 }
 
 .leia-mais {
     display: block;
     font-size: 40px;
     text-align: center;
-    /* padding: 5px; */
     transform: translateY(-20px);
-
-    /* background-color: #8a6830;
-    
-    border-radius: 20px; */
 }
 
 /*--------------- SERVIÇOS ------------------*/
@@ -826,47 +789,10 @@ h5 {
 
 @media (min-width: 1701px) {
     /*--------------- SOBRE ------------------*/
-h4,
-h5 {
-    margin: 0 !important;
-}
-
-#sobre {
-    height: 100%;
-    display: flex;
-    background-image: url('banco\ 1.png');
-    background-size: 700px;
-    /* Ajusta a imagem para cobrir todo o espaço do plano de fundo */
-    background-position: left fixed;
-    background-repeat: no-repeat;
-    background-position-y: 300px;
-    overflow-x: visible;
-}
-
-/* .conteudo {
-    padding-top: 40px;
-} */
-
-.sobre {
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.slogan {
-    margin-bottom: 40px;
-}
 
 .sobre-texto,
 .slogan {
     width: 460px;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-
-
-
 }
 
 .center-sobre {
@@ -927,124 +853,6 @@ h5 {
     flex-wrap: wrap;
 }
 
-/* ---------CARDS-SOBRE-------- */
-.items-sobre {
-    display: flex;
-    transition: transform 0.3s ease;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px !important;
-}
-
-.box-sobre {
-    margin: 0 !important;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    transition: all .45s ease;
-    width: 220px;
-    height: 120px;
-
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-
-    /* efeito de vidro */
-    /* background: rgba(255, 230, 5, 0.05);
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893); */
-
-    background: var(--main-color-gradient);
-}
-
-.box-sobre:hover {
-    display: flex;
-    flex-wrap: wrap;
-    transition: all .45s ease;
-    /* padding: 19px; */
-    width: 220px;
-    height: 350px;
-    transform: translateY(-30px);
-    /* efeito de vidro */
-    /* background: rgba(255, 205, 5, 0.59);
-    border-radius: 8px;
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893);    */
-
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-
-    background: var(--main-color-gradient);
-}
-
-.box-sobre:hover .items-desc {
-    /* padding: 14px; */
-    opacity: 1;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    transition: opacity 1.5s ease;
-    /* Adiciona uma transição suave */
-}
-
-.box-sobre:hover .items-titulo {
-    font-size: 20px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.box-sobre:hover .leia-mais {
-    display: none;
-}
-
-.items-titulo {
-    font-size: 20px;
-    transition: opacity 0.3s ease;
-    text-align: left;
-}
-
-.items-icons {
-    font-size: 30px;
-    color: white;
-}
-
-
-.items-desc {
-    /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-    opacity: 0;
-    text-align: justify;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    color: #fff;
-    /* Define a cor do texto */
-    padding: 10px;
-    /* Ajuste o espaçamento conforme desejado */
-    box-sizing: border-box;
-    /* Garante que o padding não afete o tamanho total do elemento */
-
-    padding: 15px;
-
-}
-
-.leia-mais {
-    display: block;
-    font-size: 40px;
-    text-align: center;
-    /* padding: 5px; */
-    transform: translateY(-20px);
-
-    /* background-color: #8a6830;
-    
-    border-radius: 20px; */
-}
 }
 
 
@@ -1095,9 +903,6 @@ h5 {
 .sobre-texto,
 .slogan {
     width: 460px;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 
 
 
@@ -1171,116 +976,6 @@ h5 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px !important;
-}
-
-.box-sobre {
-    margin: 0 !important;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    transition: all .45s ease;
-    width: 220px;
-    height: 120px;
-
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-
-    /* efeito de vidro */
-    /* background: rgba(255, 230, 5, 0.05);
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893); */
-
-    background: var(--main-color-gradient);
-}
-
-.box-sobre:hover {
-    display: flex;
-    flex-wrap: wrap;
-    transition: all .45s ease;
-    /* padding: 19px; */
-    width: 220px;
-    height: 350px;
-    transform: translateY(-30px);
-    /* efeito de vidro */
-    /* background: rgba(255, 205, 5, 0.59);
-    border-radius: 8px;
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 188, 20, 0.893);    */
-
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-
-    background: var(--main-color-gradient);
-}
-
-.box-sobre:hover .items-desc {
-    /* padding: 14px; */
-    opacity: 1;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    transition: opacity 1.5s ease;
-    /* Adiciona uma transição suave */
-}
-
-.box-sobre:hover .items-titulo {
-    font-size: 20px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.box-sobre:hover .leia-mais {
-    display: none;
-}
-
-.items-titulo {
-    font-size: 20px;
-    transition: opacity 0.3s ease;
-    text-align: left;
-}
-
-.items-icons {
-    font-size: 30px;
-    color: white;
-}
-
-
-.items-desc {
-    /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-    opacity: 0;
-    text-align: justify;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    color: #fff;
-    /* Define a cor do texto */
-    padding: 10px;
-    /* Ajuste o espaçamento conforme desejado */
-    box-sizing: border-box;
-    /* Garante que o padding não afete o tamanho total do elemento */
-
-    padding: 15px;
-
-}
-
-.leia-mais {
-    display: block;
-    font-size: 40px;
-    text-align: center;
-    /* padding: 5px; */
-    transform: translateY(-20px);
-
-    /* background-color: #8a6830;
-    
-    border-radius: 20px; */
 }
 
 }
@@ -1402,9 +1097,6 @@ h5 {
     
     .slogan {
         width: 420px;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
     }
     
     .center-sobre {
@@ -1464,6 +1156,7 @@ h5 {
         width: 220px;
         height: 480px;
         transform: translateY(0px);
+        margin-top: 10px;
     }
     
     .cont-cards {
@@ -1483,116 +1176,6 @@ h5 {
         gap: 0px !important;
         transform: scale(1.2);
         margin-bottom: 20px;
-    }
-    
-    .box-sobre {
-        margin: 0 !important;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        transition: all .45s ease;
-        width: 220px;
-        height: 120px;
-    
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        gap: 10px;
-    
-        /* efeito de vidro */
-        /* background: rgba(255, 230, 5, 0.05);
-        border-radius: 8px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.9px);
-        -webkit-backdrop-filter: blur(5.9px);
-        border: 1px solid rgba(255, 188, 20, 0.893); */
-    
-        background: var(--main-color-gradient);
-    }
-    
-    .box-sobre:hover {
-        display: flex;
-        flex-wrap: wrap;
-        transition: all .45s ease;
-        /* padding: 19px; */
-        width: 220px;
-        height: 350px;
-        transform: translateY(-30px);
-        /* efeito de vidro */
-        /* background: rgba(255, 205, 5, 0.59);
-        border-radius: 8px;
-        backdrop-filter: blur(5.9px);
-        -webkit-backdrop-filter: blur(5.9px);
-        border: 1px solid rgba(255, 188, 20, 0.893);    */
-    
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        gap: 10px;
-    
-        background: var(--main-color-gradient);
-    }
-    
-    .box-sobre:hover .items-desc {
-        /* padding: 14px; */
-        opacity: 1;
-        text-align: justify;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
-        transition: opacity 1.5s ease;
-        /* Adiciona uma transição suave */
-    }
-    
-    .box-sobre:hover .items-titulo {
-        font-size: 20px;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    .box-sobre:hover .leia-mais {
-        display: none;
-    }
-    
-    .items-titulo {
-        font-size: 20px;
-        transition: opacity 0.3s ease;
-        text-align: left;
-    }
-    
-    .items-icons {
-        font-size: 30px;
-        color: white;
-    }
-    
-    
-    .items-desc {
-        /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-        opacity: 0;
-        text-align: justify;
-        /* position: absolute; */
-        top: 0;
-        left: 0;
-        color: #fff;
-        /* Define a cor do texto */
-        padding: 10px;
-        /* Ajuste o espaçamento conforme desejado */
-        box-sizing: border-box;
-        /* Garante que o padding não afete o tamanho total do elemento */
-    
-        padding: 15px;
-    
-    }
-    
-    .leia-mais {
-        display: block;
-        font-size: 40px;
-        text-align: center;
-        /* padding: 5px; */
-        transform: translateY(-20px);
-    
-        /* background-color: #8a6830;
-        
-        border-radius: 20px; */
     }
 
     /* FIM DO SOBRE */
@@ -1921,10 +1504,8 @@ h5 {
     }
     
     .slogan {
-        width: 420px;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
+        width: 80%;
+        text-align: center;
     }
     
     .center-sobre {
@@ -1939,6 +1520,7 @@ h5 {
     .sobre-texto {
         padding: 20px !important;
         height: 0px;
+        justify-content: center !important;
     }
     
     /* .texto-sobre {
@@ -2003,116 +1585,6 @@ h5 {
         gap: 0px !important;
         transform: scale(1);
         margin-bottom: 20px;
-    }
-    
-    .box-sobre {
-        margin: 0 !important;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        transition: all .45s ease;
-        width: 220px;
-        height: 120px;
-    
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        gap: 10px;
-    
-        /* efeito de vidro */
-        /* background: rgba(255, 230, 5, 0.05);
-        border-radius: 8px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.9px);
-        -webkit-backdrop-filter: blur(5.9px);
-        border: 1px solid rgba(255, 188, 20, 0.893); */
-    
-        background: var(--main-color-gradient);
-    }
-    
-    .box-sobre:hover {
-        display: flex;
-        flex-wrap: wrap;
-        transition: all .45s ease;
-        /* padding: 19px; */
-        width: 220px;
-        height: 350px;
-        transform: translateY(-30px);
-        /* efeito de vidro */
-        /* background: rgba(255, 205, 5, 0.59);
-        border-radius: 8px;
-        backdrop-filter: blur(5.9px);
-        -webkit-backdrop-filter: blur(5.9px);
-        border: 1px solid rgba(255, 188, 20, 0.893);    */
-    
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        gap: 10px;
-    
-        background: var(--main-color-gradient);
-    }
-    
-    .box-sobre:hover .items-desc {
-        /* padding: 14px; */
-        opacity: 1;
-        text-align: justify;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
-        transition: opacity 1.5s ease;
-        /* Adiciona uma transição suave */
-    }
-    
-    .box-sobre:hover .items-titulo {
-        font-size: 20px;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    .box-sobre:hover .leia-mais {
-        display: none;
-    }
-    
-    .items-titulo {
-        font-size: 20px;
-        transition: opacity 0.3s ease;
-        text-align: left;
-    }
-    
-    .items-icons {
-        font-size: 30px;
-        color: white;
-    }
-    
-    
-    .items-desc {
-        /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-        opacity: 0;
-        text-align: justify;
-        /* position: absolute; */
-        top: 0;
-        left: 0;
-        color: #fff;
-        /* Define a cor do texto */
-        padding: 10px;
-        /* Ajuste o espaçamento conforme desejado */
-        box-sizing: border-box;
-        /* Garante que o padding não afete o tamanho total do elemento */
-    
-        padding: 15px;
-    
-    }
-    
-    .leia-mais {
-        display: block;
-        font-size: 40px;
-        text-align: center;
-        /* padding: 5px; */
-        transform: translateY(-20px);
-    
-        /* background-color: #8a6830;
-        
-        border-radius: 20px; */
     }
 
     /* FIM DO SOBRE */
