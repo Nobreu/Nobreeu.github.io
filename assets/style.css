@@ -774,11 +774,9 @@ h5 {
 
 #sobre {
     display: flex;
-    background-image: none;
-    background-position: left fixed;
-    background-repeat: no-repeat;
-    background-position-y: 300px;
-    overflow-x: visible;
+    background-size: 400px;
+    background-position-y: 515px;
+    overflow-x: visible; 
 }
 
 /* .conteudo {
@@ -954,6 +952,7 @@ h5 {
     #sobre {
         display: flex;
         text-align: center;
+        background-image: none;
     }
     
     .sobre {
