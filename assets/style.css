@@ -252,7 +252,6 @@ h5 {
     display: flex;
     background-image: url('banco\ 1.png');
     background-size: 700px;
-    /* Ajusta a imagem para cobrir todo o espaço do plano de fundo */
     background-position: left fixed;
     background-repeat: no-repeat;
     background-position-y: 300px;
@@ -270,17 +269,13 @@ h5 {
     justify-content: space-between;
 }
 
-.slogan {
-    margin-bottom: 40px;
-}
+/* .slogan {
+    margin-bottom: 20px!important;
+} */
 
 .sobre-texto,
 .slogan {
     width: 460px;
-
-
-
-
 }
 
 .center-sobre {
@@ -308,43 +303,16 @@ h5 {
     font-family: var(--title-font-family);
 }
 
-.pedestal {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    width: 230px;
-    height: 560px !important;
-    transform: translateY(140px);
-}
-
-.pedestal:hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 560px !important;
-    transform: translateY(140px);
-}
-
-.coluna-grega {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    overflow: hidden;
-    width: 220px;
-    height: 460px;
-}
-
 .cont-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
 }
 
 /* ---------CARDS-SOBRE-------- */
 .items-sobre {
     display: flex;
-    transition: transform 0.3s ease;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px !important;
@@ -357,44 +325,12 @@ h5 {
     padding: 20px;
     transition: all .45s ease;
     width: 220px;
-    height: 120px;
+    height: 220px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     background: var(--main-color-gradient);
-}
-
-.box-sobre:hover {
-    display: flex;
-    flex-wrap: wrap;
-    transition: all .45s ease;
-    width: 220px;
-    height: 230px;
-    /* transform: translateY(-30px); */
-
-    align-items: start;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-    background: var(--main-color-gradient);
-}
-
-.box-sobre:hover .items-desc {
-    /* padding: 14px; */
-    opacity: 1;
-    transition: opacity 1.5s ease;
-    height: 200px;
-    /* transform: translateY(-20px); */
-}
-
-.box-sobre:hover .items-titulo {
-    font-size: 15px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.box-sobre:hover .leia-mais {
-    display: none;
 }
 
 .items-titulo {
@@ -403,7 +339,6 @@ h5 {
     transition: opacity 0.3s ease;
     text-align: left;
 }
-
 .items-icons {
     font-size: 30px;
     color: white;
@@ -412,7 +347,6 @@ h5 {
 
 .items-desc {
     /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-    opacity: 0;
     text-align: left;
     color: #fff;
     font-size: 12px;
@@ -826,38 +760,13 @@ h5 {
     justify-items: center;
     align-items: center;
     width: 230px;
-    height: 560px !important;
-    transform: translateY(140px);
+    height: 300px !important;
 }
-
-.pedestal:hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 560px !important;
-    transform: translateY(140px);
-}
-
-.coluna-grega {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    overflow: hidden;
-    width: 220px;
-    height: 460px;
-}
-
-.cont-cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 }
 
 
 
-/* --------ACIMA DE 1200--------- */
+/* --------ATÉ 1700--------- */
 @media (max-width: 1700px) {
     header a img {
         /* margin: 20px 20px 20px 20px; */
@@ -866,18 +775,10 @@ h5 {
     }
 
     /*--------------- SOBRE ------------------*/
-h4,
-h5 {
-    margin: 0 !important;
-}
 
 #sobre {
-    /* height: 100%; */
     display: flex;
     background-image: none;
-
-    /* background-size: 700px; */
-    /* Ajusta a imagem para cobrir todo o espaço do plano de fundo */
     background-position: left fixed;
     background-repeat: no-repeat;
     background-position-y: 300px;
@@ -940,39 +841,19 @@ h5 {
     align-items: center;
     justify-content: space-between;
     width: 230px;
-    height: 480px !important;
-    transform: translateY(140px);
-}
-
-.pedestal:hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 480px !important;
-    transform: translateY(140px);
-}
-
-.coluna-grega {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    overflow: hidden;
-    width: 220px;
-    height: 440px;
+    height: 200px !important;
 }
 
 .cont-cards {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
 }
 
 /* ---------CARDS-SOBRE-------- */
 .items-sobre {
     display: flex;
-    transition: transform 0.3s ease;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px !important;
@@ -1051,6 +932,26 @@ h5 {
         hyphens: auto;
     }
 
+    
+    .cont-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .pedestal {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 200px !important;
+    }
+
+
 }
 
 @media (min-width: 820px) and (max-width: 992px) {
@@ -1060,39 +961,24 @@ h5 {
 }
 
 /* --------TABLETS MENORES E ALGUNS MOBILES--------- */
-@media (max-width: 819px) {
+@media (max-width: 858px) {
     /* INICIO DO SOBRE */
 
     /*--------------- SOBRE ------------------*/
-    h4,
-    h5 {
-        margin: 0 !important;
-    }
     
     #sobre {
-        /* height: 100%; */
         display: flex;
-        background-image: none;
         text-align: center;
-    
-        /* background-size: 700px; */
-        /* Ajusta a imagem para cobrir todo o espaço do plano de fundo */
-        background-position: left fixed;
-        background-repeat: no-repeat;
-        background-position-y: 300px;
-        overflow-x: visible;
     }
     
-    /* .conteudo {
-        padding-top: 40px;
-    } */
-    
     .sobre {
-        height: 1900px;
-    
+        height: 1200px;
         display: grid;
-        /* flex-direction: row; */
         justify-content: space-around;
+    }
+
+    .cont-cards {
+        display: flex;
     }
     
     .slogan {
@@ -1105,7 +991,6 @@ h5 {
         margin-top: 20px;
         align-items: normal;
         justify-content: center;
-        
     }
     
     .sobre-texto {
@@ -1132,45 +1017,21 @@ h5 {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        justify-content: space-between;
         width: 230px;
-        height: 480px !important;
-        transform: translateY(0px);
-
+        height: 300px !important;
     }
-    
-    .pedestal:hover {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 480px !important;
-        transform: translateY(0px);
-    }
-    
-    .coluna-grega {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        overflow: hidden;
-        width: 220px;
-        height: 480px;
-        transform: translateY(0px);
-        margin-top: 10px;
-    }
-    
     .cont-cards {
         display: grid;
         width: 100%;
         flex-wrap: wrap;
-        gap: 50px;
-        align-items: end;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
     }
     
     /* ---------CARDS-SOBRE-------- */
     .items-sobre {
         display: flex;
-        transition: transform 0.3s ease;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px !important;
@@ -1477,35 +1338,20 @@ h5 {
         margin: 0 !important;
     }
     
-    #sobre {
-        /* height: 100%; */
-        display: flex;
-        background-image: none;
-        text-align: center;
-    
-        /* background-size: 700px; */
-        /* Ajusta a imagem para cobrir todo o espaço do plano de fundo */
-        background-position: left fixed;
-        background-repeat: no-repeat;
-        background-position-y: 300px;
-        overflow-x: visible;
-    }
-    
-    /* .conteudo {
-        padding-top: 40px;
-    } */
-    
     .sobre {
-        height: 1900px;
-    
+        height: 1000px;
+        width: 100%;
         display: grid;
         /* flex-direction: row; */
         justify-content: space-around;
     }
     
     .slogan {
-        width: 80%;
+        width: 100%;
         text-align: center;
+        font-size: 14px !important;
+        margin-top: 15px;
+        
     }
     
     .center-sobre {
@@ -1521,6 +1367,7 @@ h5 {
         padding: 20px !important;
         height: 0px;
         justify-content: center !important;
+        width: 100%;
     }
     
     /* .texto-sobre {
@@ -1532,54 +1379,32 @@ h5 {
     }
     
     #h4-sobre {
-        font-size: 60px;
+        font-size: 40px;
         color: #E6AF50;
         font-family: var(--title-font-family);
+        margin-bottom: 20px;
     }
-    
+
     .pedestal {
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        justify-content: space-between;
         width: 230px;
-        height: 480px !important;
-        transform: translateY(0px);
-
-    }
-    
-    .pedestal:hover {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 480px !important;
-        transform: translateY(0px);
-    }
-    
-    .coluna-grega {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        overflow: hidden;
-        width: 220px;
-        height: 480px;
-        transform: translateY(0px);
+        height: auto !important;
     }
     
     .cont-cards {
         display: grid;
         width: 100%;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 0px;
         align-items: end;
     }
     
     /* ---------CARDS-SOBRE-------- */
     .items-sobre {
         display: flex;
-        transition: transform 0.3s ease;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px !important;
