@@ -168,7 +168,7 @@ header {
 .home-text h3 {
     color: #fddda6;
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 1.1;
     font-family: var(--title-font-family);
@@ -303,14 +303,17 @@ h5 {
     font-family: var(--title-font-family);
 }
 
+
+
+/* ---------CARDS-SOBRE-------- */
+
+
 .cont-cards {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     gap: 20px;
 }
-
-/* ---------CARDS-SOBRE-------- */
 .items-sobre {
     display: flex;
     flex-direction: row;
@@ -318,18 +321,23 @@ h5 {
     gap: 10px !important;
 }
 
+.title-box {
+    display: flex;
+    gap: 15px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
 .box-sobre {
     margin: 0 !important;
-    display: flex;
     flex-wrap: wrap;
     padding: 20px;
     transition: all .45s ease;
     width: 220px;
     height: 220px;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 15px;
+    
     background: var(--main-color-gradient);
 }
 
@@ -415,10 +423,8 @@ h5 {
     border: 1px solid rgba(247, 255, 0, 0.40);
 }
 
-.s-icons i {
-    font-size: 24px;
-    margin-bottom: 10px;
-    display: inline-block;
+.s-icons i{
+    margin-right: 10px;
 }
 
 .text-control {
@@ -432,23 +438,13 @@ h5 {
 }
 
 .box h3 {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 23px;
+    font-weight: 400;
     color: var(--text-color);
     margin-bottom: 15px;
 }
 
-.box p {
-    color: var(--second-color);
-    font-size: 16px;
-    line-height: 1.8;
-    font-weight: 400;
-    height: 140px;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-}
+
 
 .btn-support {
     display: flex;
@@ -901,21 +897,10 @@ h5 {
     .s-icons i {
         font-size: 24px;
         margin-bottom: 20px;
-        display: block;
-    }
-
-    .text-control {
-        display: inline-block;
-        line-height: normal;
-        height: 140px;
-        text-align: justify;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
     }
 
     .box h3 {
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 500;
         color: var(--text-color);
         margin-bottom: 15px;
@@ -1252,17 +1237,6 @@ h5 {
     .s-icons i {
         font-size: 24px;
         margin-bottom: 20px;
-        display: block;
-    }
-
-    .text-control {
-        display: inline-block;
-        line-height: normal;
-        height: 140px;
-        text-align: justify;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
     }
 
     .box h3 {
@@ -1270,14 +1244,6 @@ h5 {
         font-weight: 500;
         color: var(--text-color);
         margin-bottom: 15px;
-    }
-
-    .box p {
-        color: var(--second-color);
-        font-size: 16px;
-        line-height: 1.8;
-        font-weight: 400;
-        text-align: justify;
     }
 
     .custom-modal {
@@ -1368,6 +1334,17 @@ h5 {
         height: 0px;
         justify-content: center !important;
         width: 100%;
+    }
+
+    .box h3 {
+        font-size: 15px !important;
+    }
+
+    .box
+
+    .s-icons i {
+        font-size: 15px;
+        margin-bottom: 20px;
     }
     
     /* .texto-sobre {
@@ -1512,6 +1489,15 @@ h5 {
         font-size: 20px;
         font-weight: 100;
         margin-bottom: 2% !important;
+    }
+
+    .logo img {
+        padding-top: 30px;
+        width: 150px;
+    }
+
+    .home-section {
+        height: 100vh;
     }
 
 }
