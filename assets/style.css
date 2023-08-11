@@ -133,10 +133,8 @@ header {
     background-image: url(./bank-image.jpeg);
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
     height: 80vh;
 }
-
 .home {
     height: 85%;
     width: 100%;
@@ -144,19 +142,12 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-/* .one {
-    display: inline-block;
-    color: var(--second-color);
-} */
-
 .home-text {
     display: inline;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
 .home-text h1 {
     font-size: var(--big-font);
     font-weight: 700;
@@ -228,7 +219,6 @@ header {
     letter-spacing: 1px;
     font-weight: 600;
     transition: all .45s ease;
-    /* margin-left: 35px; */
 }
 
 .btn2:hover {
@@ -258,20 +248,12 @@ h5 {
     overflow-x: visible;
 }
 
-/* .conteudo {
-    padding-top: 40px;
-} */
-
 .sobre {
     height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-/* .slogan {
-    margin-bottom: 20px!important;
-} */
 
 .sobre-texto,
 .slogan {
@@ -288,10 +270,6 @@ h5 {
     padding: 20px !important;
     height: 530px;
 }
-
-/* .texto-sobre {
-    text-align: justify;
-} */
 
 .bem-vindo {
     font-size: 20px;
@@ -354,7 +332,6 @@ h5 {
 
 
 .items-desc {
-    /* Defina a opacidade inicial como 0 para tornar o texto invisível */
     text-align: left;
     color: #fff;
     font-size: 12px;
@@ -400,7 +377,6 @@ h5 {
     justify-content: center;
     gap: 2.5rem;
     margin-top: 5rem;
-    /* padding: 0 210px; */
     max-width: 100%;
 }
 
@@ -564,9 +540,6 @@ h5 {
 
 /*---------------------- CONTATO ----------------------*/
 .contact {
-    /* background: url(bg-t.png);
-    background-size: contain;
-    background-position: center; */
     width: 100%;
     height: 600px;
     grid-template-columns: repeat(2, 1fr);
@@ -577,7 +550,6 @@ h5 {
 }
 
 .contact-here {
-    /* padding: 0px 5%; */
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -736,10 +708,6 @@ h5 {
     height: 530px;
 }
 
-/* .texto-sobre {
-    text-align: justify;
-} */
-
 .bem-vindo {
     font-size: 20px;
 }
@@ -765,7 +733,6 @@ h5 {
 /* --------ATÉ 1700--------- */
 @media (max-width: 1700px) {
     header a img {
-        /* margin: 20px 20px 20px 20px; */
         width: 300px;
         transform: translateX(0px);
     }
@@ -779,15 +746,9 @@ h5 {
     overflow-x: visible; 
 }
 
-/* .conteudo {
-    padding-top: 40px;
-} */
-
 .sobre {
     height: 800px;
-
     display: grid;
-    /* flex-direction: row; */
     justify-content: space-around;
 }
 
@@ -798,14 +759,10 @@ h5 {
 .sobre-texto,
 .slogan {
     width: 460px;
-
-
-
 }
 
 .center-sobre {
     display: flex;
-    /* height: 100%; */
     align-items: center;
 }
 
@@ -813,10 +770,6 @@ h5 {
     padding: 20px !important;
     height: 0px;
 }
-
-/* .texto-sobre {
-    text-align: justify;
-} */
 
 .bem-vindo {
     font-size: 20px;
@@ -875,7 +828,6 @@ h5 {
 
     .about-text {
         max-width: 100%;
-        /* padding: 50px; */
         max-height: 100%;
         text-align: center;
     }
@@ -981,10 +933,6 @@ h5 {
         padding: 20px !important;
         height: 0px;
     }
-    
-    /* .texto-sobre {
-        text-align: justify;
-    } */
     
     .bem-vindo {
         font-size: 20px;
@@ -1117,8 +1065,6 @@ h5 {
         text-align: center;
         max-width: 100%;
         margin-left: 0;
-        /* padding: 80px 10% 60px; */
-        /* transform: scale(1); */
     }
 
     .home-text h1 {
@@ -1139,7 +1085,6 @@ h5 {
 
     .about {
         flex-direction: row;
-        /* padding: 100px 0; */
     }
 
     .about-img {
@@ -1159,9 +1104,6 @@ h5 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        /* max-height: fit-content;
-        max-width: fit-content; */
-        /* text-align: center; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -1208,11 +1150,9 @@ h5 {
     }
 
     #maps {
-        /* padding: 0px; */
         display: inline-flex;
         justify-content: center;
         margin-left: auto;
-        /* align-items: center; */
         max-width: 320px;
         max-height: 200px;
     }
@@ -1307,7 +1247,6 @@ h5 {
         height: 1000px;
         width: 100%;
         display: grid;
-        /* flex-direction: row; */
         justify-content: space-around;
     }
     
@@ -1345,10 +1284,6 @@ h5 {
         font-size: 15px;
         margin-bottom: 20px;
     }
-    
-    /* .texto-sobre {
-        text-align: justify;
-    } */
     
     .bem-vindo {
         font-size: 20px;
@@ -1395,21 +1330,10 @@ h5 {
         margin-top: 30% !important;
     }
 
-    /* .texto-sobre {
-        text-align: justify;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
-        margin-top: 25px;
-        margin-bottom: 0px !important;
-    } */
-
     #maps {
-        /* padding: 0px; */
         display: inline-flex;
         justify-content: center;
         margin-left: auto;
-        /* align-items: center; */
         max-width: 320px;
         max-height: 200px;
     }
@@ -1466,7 +1390,6 @@ h5 {
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-        /* white-space: pre-wrap; */
     }
 
     .navlist {
